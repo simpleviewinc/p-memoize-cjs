@@ -12,10 +12,14 @@ I wish this wasn't necessary.
 
 Import syntax
 ```
-`import pMemoize from "p-memoize-cjs"`;
+// just pMemoize
+import pMemoize from "p-memoize-cjs";
+
+// other functions
+import pMemoize, { pMemoizeClear, pMemoizeDecorator } from "p-memoize-cjs";
 ```
 
 CJS
 ```
-const { pMemoize } = "p-memoize-cjs";
+const { pMemoize, pMemoizeClear, pMemoizeDecorator } = "p-memoize-cjs";
 ```
