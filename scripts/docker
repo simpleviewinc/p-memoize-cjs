@@ -1,0 +1,14 @@
+#!/bin/bash
+
+npm run docker_build
+docker run \
+	-it \
+	-v $PWD/package.json:/app/package.json \
+	-v $PWD/tsconfig.json:/app/tsconfig.json \
+	-v $PWD/rollup.config.js:/app/rollup.config.js \
+	-v $PWD/dist:/app/dist \
+	-v $PWD/types:/app/types \
+	-v $PWD/lib:/app/lib \
+	-v $PWD/scripts:/app/scripts \
+	p-memoize-cjs:local \
+	/bin/bash
