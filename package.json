@@ -1,6 +1,6 @@
 {
 	"name": "p-memoize-cjs",
-	"version": "0.0.1",
+	"version": "7.1.0",
 	"description": "Compilation of p-memoize to cjs to avoid needing to run ESM",
 	"main": "dist/index.js",
 	"types": "types/index.d.ts",
