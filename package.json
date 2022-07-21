@@ -16,7 +16,8 @@
 	"scripts": {
 		"build": "rollup -c && cp ./node_modules/p-memoize/dist/index.d.ts ./types/p-memoize.d.ts",
 		"docker_build": "./scripts/docker_build",
-		"docker": "./scripts/docker"
+		"docker": "./scripts/docker",
+		"publish": "./scripts/publish"
 	},
 	"author": "owenallenaz@gmail.com",
 	"license": "ISC"
